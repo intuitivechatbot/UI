@@ -27,7 +27,7 @@ if user_input:
     }
 
     try:
-        response = requests.post("https://intuitive-soul-f229c1e78695.herokuapp.com/ask", json=payload)
+        response = requests.post("https://intuitive-api-dtic.onrender.com/ask", json=payload)
         if response.status_code == 200:
             answer = response.json()["answer"]
         else:
